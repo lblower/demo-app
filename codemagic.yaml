@@ -58,13 +58,13 @@ workflows:
                 # See the following link for more details - https://docs.codemagic.io/code-signing-yaml/signing-ios/
                 XCODE_WORKSPACE: "ios/YOUR_WORKSPACE_NAME.xcworkspace" # <-- Put the name of your Xcode workspace here
                 XCODE_SCHEME: "YOUR_SCHEME_NAME" # <-- Put the name of your Xcode scheme here
-                APPLE_ID: Encrypted(...) # <-- Put you encrypted Apple ID here
-                APP_SPECIFIC_PASSWORD: Encrypted(...) # <-- Put your encrypted App Specific Password here. For more information visit: https://support.apple.com/en-us/HT204397
+                APPLE_ID: Encrypted(Z0FBQUFBQmd6aW1aU1ZlTXo5VDJKWjRGVkh1UWR0UXFuTU8tV2RWeDNnRTJmSEt3bnJRNW5zd1hFTDVTbUw0TE5EUU5lQzVGN0pzRjhtUGJxSmhvVXdYeW53Q1lib3dqTEZRY0ZrWS1UaUNmT2VMS09YQlAzUFE9) # <-- Put you encrypted Apple ID here
+                APP_SPECIFIC_PASSWORD: Encrypted(Z0FBQUFBQmd6aXE2SlRWeXhObS02ZUh5SFpOTHAxc3BFVm9jQjhLTjZMTmJfVm1DVFo4WFZEaktsdFZwaGRxMm9ZV1lxMlFzanV2a3I2WlNHaVhOczdiNTg1anE0UTRreFRWRUF3cXY1M2loRGRxQmZYcXVMWUE9) # <-- Put your encrypted App Specific Password here. For more information visit: https://support.apple.com/en-us/HT204397
                 # https://appstoreconnect.apple.com/access/api
-                APP_STORE_CONNECT_ISSUER_ID: Encrypted(...) # <-- Put your App Store Connect Issuer Id here
-                APP_STORE_CONNECT_KEY_IDENTIFIER: Encrypted(...) # <-- Put your App Store Connect Key Identifier here
-                APP_STORE_CONNECT_PRIVATE_KEY: Encrypted(...) # <-- Put your App Store Connect Private Key here
-                CERTIFICATE_PRIVATE_KEY: Encrypted(...) # <-- Put your Certificate Private key here
+              #  APP_STORE_CONNECT_ISSUER_ID: Encrypted(...) # <-- Put your App Store Connect Issuer Id here
+               # APP_STORE_CONNECT_KEY_IDENTIFIER: Encrypted(...) # <-- Put your App Store Connect Key Identifier here
+               # APP_STORE_CONNECT_PRIVATE_KEY: Encrypted(...) # <-- Put your App Store Connect Private Key here
+               # CERTIFICATE_PRIVATE_KEY: Encrypted(...) # <-- Put your Certificate Private key here
                 BUNDLE_ID: "YOUR_BUNDLE_ID_HERE" # <-- Put your Bundle Id here e.g com.domain.myapp
                 APP_STORE_APP_ID: 1555555551 # <-- Put the app id number here. This is found in App Store Connect > App > General > App Information
             node: latest
